@@ -59,7 +59,7 @@ export default function AbstractPage() {
           <h3>Access Paper:</h3>
           <ul>
             <li>
-              <Link to={`/html/${paper.id}`}>View tagged HTML</Link>
+              <Link to={`/html/${paper.id}`}>View HTML</Link>
             </li>
             <li>
               <span className="fake-link" title="Demo only">

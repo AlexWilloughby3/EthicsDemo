@@ -66,7 +66,7 @@ export default function ListingPage() {
             <dt>
               <span className="muted">[{i + 1}]</span> <Link to={`/abs/${p.id}`}>arXiv:{p.id}</Link>{' '}
               <span className="muted">
-                [<Link to={`/html/${p.id}`}>tagged html</Link>]
+                [<Link to={`/html/${p.id}`}>html</Link>]
               </span>{' '}
               <LevelBadge level={getLevel(p).level} />
             </dt>
