@@ -1,10 +1,11 @@
 import { Link, useParams } from 'react-router-dom'
-import { getPaper } from '../data/papers'
+import { citedBy, getLevel, getPaper } from '../data/papers'
 import { CATEGORIES } from '../data/taxonomy'
 import DeclarationsCard from '../components/DeclarationsCard'
 import LevelCard from '../components/LevelCard'
 import ResultsList from '../components/ResultsList'
 import Markdown, { InlineMath } from '../components/Markdown'
+import { LevelBadge } from '../components/Badges'
 import NotFound from './NotFound'
 
 export default function AbstractPage() {
@@ -13,6 +14,7 @@ export default function AbstractPage() {
 
   const primary = paper.categories[0]
   const latest = paper.versions[paper.versions.length - 1]
+  const citing = citedBy(paper.id)
 
   return (
     <div className="abs-layout">
@@ -79,6 +81,22 @@ export default function AbstractPage() {
         <LevelCard paper={paper} />
 
         <DeclarationsCard paper={paper} />
+
+        {citing.length > 0 && (
+          <div className="side-box">
+            <h3>Cited by</h3>
+            <ul className="small cited-by">
+              {citing.map((c) => (
+                <li key={c.id}>
+                  <Link to={`/abs/${c.id}`}>arXiv:{c.id}</Link> <LevelBadge level={getLevel(c).level} />
+                  <div className="muted">
+                    <InlineMath>{c.title}</InlineMath>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         <div className="side-box">
           <h3>Submission history</h3>

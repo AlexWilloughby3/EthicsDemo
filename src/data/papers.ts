@@ -31,3 +31,8 @@ export function getLevel(paper: Paper): LevelInfo {
   levelCache.set(paper.id, info)
   return info
 }
+
+/** Papers on the site that cite one of this paper's results. */
+export function citedBy(id: string): Paper[] {
+  return PAPERS.filter((p) => p.id !== id && p.results.some((r) => r.citedPaperId === id))
+}

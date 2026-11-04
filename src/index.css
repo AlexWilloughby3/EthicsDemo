@@ -111,6 +111,8 @@ a:hover { text-decoration: underline; }
 .chip-ok { background: #e8f5e9; color: #1b5e20; border-color: #a5d6a7; }
 .chip-warn { background: #fff3e0; color: #a14a00; border-color: #ffb74d; }
 .cited-tag { font-size: 0.7rem; font-weight: normal; color: var(--muted); border: 1px solid var(--border); border-radius: 3px; padding: 0 4px; margin-left: 8px; vertical-align: middle; }
+.cited-by { list-style: none; padding: 0; margin: 0; }
+.cited-by li { margin-bottom: 8px; }
 .declarations { list-style: none; padding: 0; margin: 0; font-size: 0.85rem; }
 .declarations > li { margin-bottom: 8px; }
 .declarations ul { padding-left: 1.2em; margin: 2px 0 0; }
