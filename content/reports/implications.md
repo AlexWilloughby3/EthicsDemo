@@ -1,7 +1,5 @@
 # Reasons & Implications
 
-> **Placeholder (Shane).** Replace this file, `content/reports/implications.md`, with the reasons/implications report.
-
 ## Why overhaul math communication?
 - Make sure AI is integrated into mathematics research effectively and responsibly
 - Keep human work and understanding valued, rather than letting AI output dominate the field

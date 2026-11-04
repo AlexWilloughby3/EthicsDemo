@@ -25,7 +25,7 @@ Pushing to `main` deploys to GitHub Pages automatically (`.github/workflows/depl
 - Funding report (Jiya): `content/reports/funding.md`
 - Reasons & implications (Shane): `content/reports/implications.md`
 - Guidelines text / About page: `content/reports/guidelines.md`, `content/reports/about.md`
-- Images: put them in `public/` and reference them as `/name.png`
+- Images: put them in `public/` and reference them **without** a leading slash, e.g. `![Funding sources](funding-diagram.png)` (a leading `/` breaks on GitHub Pages)
 
 ## Code map
 

@@ -1,7 +1,5 @@
 # Funding Landscape of Mathematics Research
 
-> **Placeholder (Jiya).** Replace this file, `content/reports/funding.md`, with the funding breakdown. Images can go in `public/` and be referenced as `![caption](/funding-diagram.png)`.
-
 ## Sources of funding
 - Government agencies
 - Universities
